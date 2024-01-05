@@ -1,0 +1,11 @@
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\6-print_string\bin\Debug\netcoreapp2.1\6-print_string.deps.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\6-print_string\bin\Debug\netcoreapp2.1\6-print_string.runtimeconfig.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\6-print_string\bin\Debug\netcoreapp2.1\6-print_string.runtimeconfig.dev.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\6-print_string\bin\Debug\netcoreapp2.1\6-print_string.dll
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\6-print_string\bin\Debug\netcoreapp2.1\6-print_string.pdb
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\6-print_string\obj\Debug\netcoreapp2.1\6-print_string.csprojAssemblyReference.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\6-print_string\obj\Debug\netcoreapp2.1\6-print_string.csproj.CoreCompileInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\6-print_string\obj\Debug\netcoreapp2.1\6-print_string.AssemblyInfoInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\6-print_string\obj\Debug\netcoreapp2.1\6-print_string.AssemblyInfo.cs
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\6-print_string\obj\Debug\netcoreapp2.1\6-print_string.dll
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\6-print_string\obj\Debug\netcoreapp2.1\6-print_string.pdb
