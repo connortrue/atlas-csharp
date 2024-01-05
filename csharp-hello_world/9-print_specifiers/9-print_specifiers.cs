@@ -7,9 +7,7 @@ class Program
 	{
 		double percent = .7553;
 		double currency = 98765.4321;
-
-		CultureInfo.CurrentCulture = new CultureInfo("en-US");
-		Console.WriteLine($"Percent: {percent*100}% tip");
-		Console.WriteLine($"Currency: ${currency:N2}");
+        Console.WriteLine("Percent: ", percent);
+        Console.WriteLine("Currency: ", currency);
 	}
 }
