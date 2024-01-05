@@ -1,0 +1,4 @@
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\8-print_variables\obj\Debug\netcoreapp2.1\8-print_variables.csprojAssemblyReference.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\8-print_variables\obj\Debug\netcoreapp2.1\8-print_variables.csproj.CoreCompileInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\8-print_variables\obj\Debug\netcoreapp2.1\8-print_variables.AssemblyInfoInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\8-print_variables\obj\Debug\netcoreapp2.1\8-print_variables.AssemblyInfo.cs
