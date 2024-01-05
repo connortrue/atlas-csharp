@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Connor\\Downloads\\atlas-csharp\\3-writeline\\3-writeline.csproj",
+      "projectUniqueName": "C:\\Users\\Connor\\Downloads\\atlas-csharp\\csharp-hello_world\\3-writeline\\3-writeline.csproj",
       "projectName": "3-writeline",
-      "projectPath": "C:\\Users\\Connor\\Downloads\\atlas-csharp\\3-writeline\\3-writeline.csproj",
+      "projectPath": "C:\\Users\\Connor\\Downloads\\atlas-csharp\\csharp-hello_world\\3-writeline\\3-writeline.csproj",
       "packagesPath": "C:\\Users\\Connor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Connor\\Downloads\\atlas-csharp\\3-writeline\\obj\\",
+      "outputPath": "C:\\Users\\Connor\\Downloads\\atlas-csharp\\csharp-hello_world\\3-writeline\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
