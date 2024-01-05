@@ -1,0 +1,11 @@
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\9-print_specifiers\bin\Debug\netcoreapp2.1\9-print_specifiers.deps.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\9-print_specifiers\bin\Debug\netcoreapp2.1\9-print_specifiers.runtimeconfig.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\9-print_specifiers\bin\Debug\netcoreapp2.1\9-print_specifiers.runtimeconfig.dev.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\9-print_specifiers\bin\Debug\netcoreapp2.1\9-print_specifiers.dll
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\9-print_specifiers\bin\Debug\netcoreapp2.1\9-print_specifiers.pdb
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\9-print_specifiers\obj\Debug\netcoreapp2.1\9-print_specifiers.csprojAssemblyReference.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\9-print_specifiers\obj\Debug\netcoreapp2.1\9-print_specifiers.csproj.CoreCompileInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\9-print_specifiers\obj\Debug\netcoreapp2.1\9-print_specifiers.AssemblyInfoInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\9-print_specifiers\obj\Debug\netcoreapp2.1\9-print_specifiers.AssemblyInfo.cs
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\9-print_specifiers\obj\Debug\netcoreapp2.1\9-print_specifiers.dll
+C:\Users\Connor\Downloads\atlas-csharp\csharp-hello_world\9-print_specifiers\obj\Debug\netcoreapp2.1\9-print_specifiers.pdb
