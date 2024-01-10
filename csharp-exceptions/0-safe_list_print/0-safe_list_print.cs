@@ -24,7 +24,7 @@ public class List
         }
         catch (Exception)
         {
-            return count;
+            throw new Exception("inception sucked");
         }
     }
 }
