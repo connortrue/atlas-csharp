@@ -16,12 +16,12 @@ public class Array
         }
         else
         {
-            int[] newArray = new int[size];
-            for (int i = 0; i < size; i++)
-            {
-                newArray[i] = i;
-                Console.Write(newArray[i] + " ");
-            }
+        for (i = 0; i < array.Length; i++)
+        {
+                Console.Write(array[i]);
+                if (i < array.Length - 1)
+                    Console.Write(" ");
+        }
             Console.WriteLine();
             return newArray;
         }
