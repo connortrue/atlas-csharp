@@ -1,0 +1,11 @@
+C:\Users\Connor\Downloads\atlas-csharp\csharp-arrays_lists_dictionaries\1-element_at\obj\Debug\netcoreapp2.1\1-element_at.csprojAssemblyReference.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-arrays_lists_dictionaries\1-element_at\obj\Debug\netcoreapp2.1\1-element_at.csproj.CoreCompileInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-arrays_lists_dictionaries\1-element_at\obj\Debug\netcoreapp2.1\1-element_at.AssemblyInfoInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-arrays_lists_dictionaries\1-element_at\obj\Debug\netcoreapp2.1\1-element_at.AssemblyInfo.cs
+C:\Users\Connor\Downloads\atlas-csharp\csharp-arrays_lists_dictionaries\1-element_at\bin\Debug\netcoreapp2.1\1-element_at.deps.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-arrays_lists_dictionaries\1-element_at\bin\Debug\netcoreapp2.1\1-element_at.runtimeconfig.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-arrays_lists_dictionaries\1-element_at\bin\Debug\netcoreapp2.1\1-element_at.runtimeconfig.dev.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-arrays_lists_dictionaries\1-element_at\bin\Debug\netcoreapp2.1\1-element_at.dll
+C:\Users\Connor\Downloads\atlas-csharp\csharp-arrays_lists_dictionaries\1-element_at\bin\Debug\netcoreapp2.1\1-element_at.pdb
+C:\Users\Connor\Downloads\atlas-csharp\csharp-arrays_lists_dictionaries\1-element_at\obj\Debug\netcoreapp2.1\1-element_at.dll
+C:\Users\Connor\Downloads\atlas-csharp\csharp-arrays_lists_dictionaries\1-element_at\obj\Debug\netcoreapp2.1\1-element_at.pdb
