@@ -31,11 +31,11 @@ public class List
 
                 resultList.Add(result);
             }
-            catch (DivideByZeroException e)
+            catch (DivideByZeroException)
             {
                 Console.WriteLine("Cannot divide by zero");
             }
-            catch (ArgumentOutOfRangeException e)
+            catch (ArgumentOutOfRangeException)
             {
                 Console.WriteLine("Out of range");
             }
