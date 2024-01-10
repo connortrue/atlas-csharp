@@ -12,10 +12,3 @@ class Array
         return array[index];
     }
 }
-
-class Program
-{
-    static void Main(string[] args)
-    {
-    }
-}

@@ -32,10 +32,3 @@ public class Array
         CreatePrint(size);
     }
 }
-
-class Programtoo
-{
-    static void Main(string[] args)
-    {
-    }
-}
