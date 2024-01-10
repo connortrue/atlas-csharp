@@ -2,7 +2,7 @@ using System;
 
 public class Array
 {
-    public static int[] PrintArray(int size)
+    public static int[] CreatePrint(int size)
     {
         if (size < 0)
         {
@@ -25,6 +25,11 @@ public class Array
             Console.WriteLine();
             return newArray;
         }
+    }
+
+    public static void PrintArray(int size)
+    {
+        CreatePrint(size);
     }
 }
 
