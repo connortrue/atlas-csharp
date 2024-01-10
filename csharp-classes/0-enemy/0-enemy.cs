@@ -1,8 +1,8 @@
-using System;
-
+// Define a namespace 'Enemies'
 namespace Enemies
 {
-   public class Zombie
-   {
-   }
+  // Define a public class 'Zombie'
+  public class Zombie
+  {
+  }
 }
