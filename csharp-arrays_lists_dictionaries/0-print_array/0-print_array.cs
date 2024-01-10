@@ -33,7 +33,7 @@ public class Array
     }
 }
 
-class Program2
+class Programtoo
 {
     static void Main(string[] args)
     {
