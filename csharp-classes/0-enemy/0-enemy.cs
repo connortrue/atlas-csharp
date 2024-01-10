@@ -1,8 +1,12 @@
-// Define a namespace 'Enemies'
+/// <summary>
+/// The Enemies namespace.
+/// </summary>
 namespace Enemies
 {
-  // Define a public class 'Zombie'
-  public class Zombie
-  {
-  }
+   /// <summary>
+   /// Represents a zombie entity.
+   /// </summary>
+   public class Zombie
+   {
+   }
 }

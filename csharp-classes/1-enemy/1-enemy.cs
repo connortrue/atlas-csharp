@@ -1,17 +1,25 @@
-// Define a namespace 'Enemies'
+/// <summary>
+/// The Enemies namespace.
+/// </summary>
 namespace Enemies
 {
-  // Define a public class 'Zombie'
-  public class Zombie
-  {
-      // Public integer field 'health'
-      public int health;
+   /// <summary>
+   /// Represents a zombie entity.
+   /// </summary>
+   public class Zombie
+   {
+       /// <summary>
+       /// Gets or sets the health of the zombie.
+       /// </summary>
+       public int health;
 
-      // Public constructor 'Zombie'
-      public Zombie()
-      {
-          // Set the value of 'health' to 0 in the constructor
-          health = 0;
-      }
-  }
+       /// <summary>
+       /// Initializes a new instance of the Zombie class.
+       /// </summary>
+       public Zombie()
+       {
+           // Set the value of 'health' to 0 in the constructor
+           health = 0;
+       }
+   }
 }
