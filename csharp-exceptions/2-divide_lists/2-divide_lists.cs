@@ -13,6 +13,8 @@ public class List
             {
                 int result = 0;
 
+                
+
                 if (i < list1.Count && i < list2.Count)
                 {
                     if (list2[i] != 0)
