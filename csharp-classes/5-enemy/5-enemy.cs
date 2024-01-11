@@ -5,7 +5,7 @@ namespace Enemies
     public class Zombie
     {
         private int health; // private field for health
-        private string name = "No name"; // private field for name with default value
+        private string name = "(No name)"; // private field for name with default value
 
         public Zombie()
         {
