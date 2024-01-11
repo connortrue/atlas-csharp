@@ -1,8 +1,3 @@
-using System;
-
-/// <summary>
-/// The Enemies namespace.
-/// </summary>
 namespace Enemies
 {
    /// <summary>
