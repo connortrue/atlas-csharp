@@ -8,7 +8,7 @@ namespace Enemies
     public class Zombie
     {
         private int health; // private field for health
-        private string name = "No name"; // private field for name with default value
+        private string name = "(No name)"; // private field for name with default value
 
         /// <summary>
         /// Initializes a new instance of the Zombie class with default health value 0 and default name "No name".
