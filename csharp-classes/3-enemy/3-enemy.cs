@@ -2,6 +2,9 @@ using System;
 
 namespace Enemies
     {
+    /// <summary>
+    /// Represents a zombie entity.
+    /// </summary>
     public class Zombie
     {
         private int health; // private field for health
