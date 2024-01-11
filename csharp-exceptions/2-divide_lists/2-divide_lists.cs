@@ -28,7 +28,7 @@ public class List
                 }
                 else
                 {
-                    Console.WriteLine("Out of range");
+                    continue;
                 }
 
                 resultList.Add(result);
