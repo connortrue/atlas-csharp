@@ -1,0 +1,11 @@
+C:\Users\Connor\Downloads\atlas-csharp\csharp-ifelse_loops_methods\0-positive_or_negative\bin\Debug\netcoreapp2.1\0-positive_or_negative.deps.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-ifelse_loops_methods\0-positive_or_negative\bin\Debug\netcoreapp2.1\0-positive_or_negative.runtimeconfig.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-ifelse_loops_methods\0-positive_or_negative\bin\Debug\netcoreapp2.1\0-positive_or_negative.runtimeconfig.dev.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-ifelse_loops_methods\0-positive_or_negative\bin\Debug\netcoreapp2.1\0-positive_or_negative.dll
+C:\Users\Connor\Downloads\atlas-csharp\csharp-ifelse_loops_methods\0-positive_or_negative\bin\Debug\netcoreapp2.1\0-positive_or_negative.pdb
+C:\Users\Connor\Downloads\atlas-csharp\csharp-ifelse_loops_methods\0-positive_or_negative\obj\Debug\netcoreapp2.1\0-positive_or_negative.csprojAssemblyReference.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-ifelse_loops_methods\0-positive_or_negative\obj\Debug\netcoreapp2.1\0-positive_or_negative.csproj.CoreCompileInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-ifelse_loops_methods\0-positive_or_negative\obj\Debug\netcoreapp2.1\0-positive_or_negative.AssemblyInfoInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-ifelse_loops_methods\0-positive_or_negative\obj\Debug\netcoreapp2.1\0-positive_or_negative.AssemblyInfo.cs
+C:\Users\Connor\Downloads\atlas-csharp\csharp-ifelse_loops_methods\0-positive_or_negative\obj\Debug\netcoreapp2.1\0-positive_or_negative.dll
+C:\Users\Connor\Downloads\atlas-csharp\csharp-ifelse_loops_methods\0-positive_or_negative\obj\Debug\netcoreapp2.1\0-positive_or_negative.pdb
