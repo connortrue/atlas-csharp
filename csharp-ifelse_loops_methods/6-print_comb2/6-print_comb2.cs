@@ -20,6 +20,5 @@ class Program
                 count++;
             }
         }
-        Console.WriteLine();
     }
 }
