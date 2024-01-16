@@ -2,7 +2,7 @@ using System;
 
 public class Shape
 {
-    public virtual int Area()
+    public void int Area()
     {
         return 0;
     }
@@ -43,7 +43,7 @@ public class Rectangle : Shape
         }
     }
 
-    public override int Area()
+    public void int Area()
     {
         return width * height;
     }
