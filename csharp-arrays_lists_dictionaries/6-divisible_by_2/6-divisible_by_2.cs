@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-class <link>List</link>
+class List
 {
     public static List<bool> DivisibleBy2(List<int> myList)
     {
