@@ -1,5 +1,18 @@
 using System;
 
+public class Shape
+{
+    public virtual int Area()
+    {
+        return 0;
+    }
+
+    public override string ToString()
+    {
+        return "Generic Shape";
+    }
+}
+
 public class Rectangle : Shape
 {
     private int width;
