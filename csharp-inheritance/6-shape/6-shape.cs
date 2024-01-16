@@ -4,7 +4,7 @@ public class Shape
 {
    public virtual int Area()
    {
-       return 0;
+       return width * height;
    }
 
    public override string ToString()
