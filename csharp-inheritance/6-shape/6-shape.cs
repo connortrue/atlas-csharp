@@ -2,7 +2,7 @@ using System;
 
 public class Shape
 {
-    public void int Area()
+    public void Area()
     {
         return 0;
     }
@@ -43,7 +43,7 @@ public class Rectangle : Shape
         }
     }
 
-    public void int Area()
+    public void Area()
     {
         return width * height;
     }
