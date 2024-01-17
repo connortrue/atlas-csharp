@@ -4,7 +4,7 @@ public class Shape
 {
    public virtual int Area()
    {
-       return 0;
+       throw new NotImplementedException("Area() is not implemented");
    }
 
    public override string ToString()
