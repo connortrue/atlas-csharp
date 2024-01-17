@@ -11,7 +11,7 @@ class MyQueue
         // Print the item at the top of aQueue without removing it
         if (aQueue.Count > 0)
         {
-            Console.WriteLine("First item: " + aQueue.Peek();
+            Console.WriteLine("First item: " + aQueue.Peek());
         }
         else
         {
