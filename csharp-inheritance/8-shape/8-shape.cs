@@ -2,19 +2,13 @@ using System;
 
 public class Rectangle
 {
-   protected int width;
-   protected int height;
+   public virtual int Width { get; set; }
+   public virtual int Height { get; set; }
 
-   public virtual int Width
+   public Rectangle(int width, int height)
    {
-       get { return width; }
-       set { width = value; }
-   }
-
-   public virtual int Height
-   {
-       get { return height; }
-       set { height = value; }
+       Width = width;
+       Height = height;
    }
 }
 
@@ -24,21 +18,16 @@ public class Square : Rectangle
 
    public int Size
    {
-       get
-       {
-           return size;
-       }
+       get { return size; }
        set
        {
            if (value < 0)
-           {
-               throw new ArgumentException("Size must be greater than or equal to 0.");
-           }
+               throw new ArgumentException("Size must be greater than or equal to 0");
            else
            {
                size = value;
-               base.Width = value;
-               base.Height = value;
+               Height = value;
+               Width = value;
            }
        }
    }
