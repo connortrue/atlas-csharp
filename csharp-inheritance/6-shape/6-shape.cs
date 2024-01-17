@@ -20,32 +20,25 @@ public class Rectangle : Shape
 
    public int Width
    {
-       get => width;
-       set
-       {
+       get { return width; }
+       set 
+       { 
            if (value < 0)
-           {
-               throw new ArgumentException("Width must be greater than or equal to 0");
-           }
-           width = value;
+               throw new ArgumentException("Width must be greater than or equal to 0.");
+           else
+               width = value; 
        }
    }
 
    public int Height
    {
-       get => height;
-       set
-       {
+       get { return height; }
+       set 
+       { 
            if (value < 0)
-           {
-               throw new ArgumentException("Height must be greater than or equal to 0");
-           }
-           height = value;
+               throw new ArgumentException("Height must be greater than or equal to 0.");
+           else
+               height = value; 
        }
-   }
-
-   public override int Area()
-   {
-       throw new System.NotImplementedException("Area() is not implemented")
    }
 }
