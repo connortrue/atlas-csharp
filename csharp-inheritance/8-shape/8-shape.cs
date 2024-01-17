@@ -1,34 +1,18 @@
 using System;
-
-public class Rectangle
+public class Shape
 {
-  protected int width;
-  protected int height;
+    public virtual int Area()
+    {
+        return width * height;
+    }
 
-  public virtual int Width
-  {
-      get { return width; }
-      set { width = value; }
-  }
-
-  public virtual int Height
-  {
-      get { return height; }
-      set { height = value; }
-  }
-
-  public virtual double Area()
-  {
-      return width * height;
-  }
-
-  public override string ToString()
-  {
-      return $"[Rectangle] {width} / {height}";
-  }
+    public override string ToString()
+    {
+        return "Generic Shape";
+    }
 }
 
-public class Square : Rectangle
+public class Rectangle : Shape
 {
   private int size;
 
