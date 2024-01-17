@@ -1,34 +1,45 @@
 using System;
 
-public class Square
+public class Rectangle
 {
-    public virtual int Area()
-    {
-        return 0;
-    }
+   protected int width;
+   protected int height;
 
-    public override string ToString()
-    {
-        return "Generic Shape";
-    }
+   public virtual int Width
+   {
+       get { return width; }
+       set { width = value; }
+   }
+
+   public virtual int Height
+   {
+       get { return height; }
+       set { height = value; }
+   }
 }
 
-public class Rectangle : Square
+public class Square : Rectangle
 {
-    private int size;
+   private int size;
 
-    public int Size
-    {
-        get => size;
-        set
-        {
-            if (value < 0)
-            {
-                throw new ArgumentException("Size must be greater than or equal to 0");
-            }
-            size = value;
-            Width = value;
-            Height = value;
-        }
-    }
+   public int Size
+   {
+       get
+       {
+           return size;
+       }
+       set
+       {
+           if (value < 0)
+           {
+               throw new ArgumentException("Size must be greater than or equal to 0.");
+           }
+           else
+           {
+               size = value;
+               base.Width = value;
+               base.Height = value;
+           }
+       }
+   }
 }
