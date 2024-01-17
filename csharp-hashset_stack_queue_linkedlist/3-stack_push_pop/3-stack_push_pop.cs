@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 public static Stack<string> Info(Stack<string> aStack, string newItem, string search)
 {
    // Print the number of items in aStack
