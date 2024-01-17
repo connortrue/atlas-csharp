@@ -15,6 +15,7 @@ public class MyStack
       }
       else
       {
+          aStack.Pop();
           Console.WriteLine("Stack is empty");
       }
 
