@@ -46,6 +46,6 @@ public class Rectangle : Shape
 
    public override int Area()
    {
-       return width * height;
+       throw new System.NotImplementedException("Area() is not implemented")
    }
 }
