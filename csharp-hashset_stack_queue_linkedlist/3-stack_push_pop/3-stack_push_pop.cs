@@ -10,6 +10,7 @@ public static Stack<string> Info(Stack<string> aStack, string newItem, string se
    }
    else
    {
+       aStack.Pop();
        Console.WriteLine("Stack is empty");
    }
 
