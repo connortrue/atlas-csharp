@@ -1,6 +1,6 @@
 using System;
 
-public abstract class Base
+abstract class Base
 {
    public string name;
 
