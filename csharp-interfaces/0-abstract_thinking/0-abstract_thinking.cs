@@ -2,14 +2,10 @@ using System;
 
 public abstract class Base
 {
-   public string Name { get; set; }
+   public string name;
 
    public override string ToString()
    {
-       return $"{this.Name} is a {this.GetType().Name}";
+       return $"{this.name} is a {this.GetType().name}";
    }
-}
-
-public class SoftwareEngineer : Base
-{
 }
