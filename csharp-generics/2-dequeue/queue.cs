@@ -2,8 +2,8 @@ using System;
 
 public class Queue<T>
 {
-    private Node<T> _head;
-    private Node<T> _tail;
+    private Node<T> head;
+    private Node<T> tail;
 
     public void Enqueue(T value)
     {
@@ -23,17 +23,17 @@ public class Queue<T>
 
     public T Dequeue()
     {
-        if (_head == null)
+        if (head == null)
         {
             Console.WriteLine("Queue is empty");
             return default(T);
         }
 
-        T value = _head.Value;
-        _head = _head.Next;
-        if (_head == null)
+        T value = head.Value;
+        head = head.Next;
+        if (head == null)
         {
-            _tail = null;
+            tail = null;
         }
         return value;
     }
