@@ -1,9 +1,9 @@
-using System;
-
-public class <link>Queue<T></link>
+public class Queue<T>
 {
-    public string CheckType()
+    private List<T> _list = new List<T>();
+
+    public Type CheckType()
     {
-        return typeof(T).FullName;
+        return typeof(T);
     }
 }

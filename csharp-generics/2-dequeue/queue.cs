@@ -1,24 +1,48 @@
-using System;
-
 public class Queue<T>
 {
-    private Node<T> head;
-    private Node<T> tail;
+    public class Node
+    {
+        public T value { get; set; }
+        public Node next { get; set; }
+
+        public Node(T value)
+        {
+            this.value = value;
+        }
+    }
+
+    private Node head;
+    private Node tail;
+    private int count;
+
+    public Queue()
+    {
+        head = null;
+        tail = null;
+        count = 0;
+    }
 
     public void Enqueue(T value)
     {
         Node newNode = new Node(value);
+
         if (head == null)
         {
             head = newNode;
-            tail = head;
+            tail = newNode;
         }
         else
         {
             tail.next = newNode;
             tail = newNode;
         }
+
         count++;
+    }
+
+    public int Count()
+    {
+        return count;
     }
 
     public T Dequeue()
@@ -29,18 +53,16 @@ public class Queue<T>
             return default(T);
         }
 
-        T value = head.Value;
-        head = head.Next;
+        T value = head.value;
+        head = head.next;
+
         if (head == null)
         {
             tail = null;
         }
+
+        count--;
+
         return value;
     }
-}
-
-public class Node<T>
-{
-    public T Value { get; set; }
-    public Node<T> Next { get; set; }
 }
