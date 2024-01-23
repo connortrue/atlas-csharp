@@ -5,6 +5,22 @@ public class Queue<T>
     private Node<T> _head;
     private Node<T> _tail;
 
+    public void Enqueue(T value)
+    {
+        Node newNode = new Node(value);
+        if (head == null)
+        {
+            head = newNode;
+            tail = head;
+        }
+        else
+        {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        count++;
+    }
+
     public T Dequeue()
     {
         if (_head == null)
