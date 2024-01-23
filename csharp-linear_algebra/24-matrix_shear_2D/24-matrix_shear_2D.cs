@@ -2,40 +2,31 @@ public class MatrixMath
 {
     public static double[,] Shear2D(double[,] matrix, char direction, double factor)
     {
-        if (matrix.GetLength(0) != matrix.GetLength(1))
-        {
-            return new double[,] { { -1 } }; // Return a matrix containing -1 for invalid size
-        }
+        // Check if the matrix is square
+        int rows = matrix.GetLength(0);
+        int cols = matrix.GetLength(1);
+        if (rows != cols)
+            return new double[1, 1] { { -1 } };
 
+        // Check if the direction is valid
         if (direction != 'x' && direction != 'y')
-        {
-            return new double[,] { { -1 } }; // Return a matrix containing -1 for invalid direction
-        }
+            return new double[1, 1] { { -1 } };
 
-        int size = matrix.GetLength(0);
-        double[,] shearedMatrix = new double[size, size];
+        // Create a new matrix to store the result
+        double[,] result = new double[rows, cols];
 
-        if (direction == 'x')
+        // Perform the shear operation
+        for (int i = 0; i < rows; i++)
         {
-            for (int i = 0; i < size; i++)
+            for (int j = 0; j < cols; j++)
             {
-                for (int j = 0; j < size; j++)
-                {
-                    shearedMatrix[i, j] = matrix[i, j + (int)(factor * i)];
-                }
-            }
-        }
-        else if (direction == 'y')
-        {
-            for (int i = 0; i < size; i++)
-            {
-                for (int j = 0; j < size; j++)
-                {
-                    shearedMatrix[i, j] = matrix[i + (int)(factor * j), j];
-                }
+                if (direction == 'x')
+                    result[i, j] = matrix[i, j] + factor * j;
+                else
+                    result[i, j] = matrix[i, j] + factor * i;
             }
         }
 
-        return shearedMatrix;
+        return result;
     }
 }
