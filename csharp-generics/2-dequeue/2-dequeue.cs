@@ -3,11 +3,9 @@ public class Queue<T>
     private Node<T> _head;
     private Node<T> _tail;
 
-    // Other methods and properties of the Queue class
-
     public T Dequeue()
     {
-        if _head == null)
+        if (_head == null)
         {
             Console.WriteLine("Queue is empty");
             return default(T);
@@ -15,7 +13,7 @@ public class Queue<T>
 
         T value = _head.Value;
         _head = _head.Next;
-        if _head == null)
+        if (_head == null)
         {
             _tail = null;
         }
