@@ -4,21 +4,29 @@ public class MatrixMath
 {
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
-        // Check if the matrix is square
-        int rows = matrix.GetLength(0);
-        int cols = matrix.GetLength(1);
-        if (rows != cols)
-            return new double[1, 1] { { -1 } };
-
-        // Create a new matrix to store the result
-        double[,] result = new double[rows, cols];
-
-        // Perform the rotation operation
-        for (int i = 0; i < rows; i++)
+        // Check if the matrix is a square
+        int n = matrix.GetLength(0);
+        if (n != matrix.GetLength(1))
         {
-            for (int j = 0; j < cols; j++)
+            return new double[,] { { -1 } };
+        }
+
+        // Create a new matrix for the result
+        double[,] result = new double[n, n];
+
+        // Apply the rotation operation to each element
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
             {
-                result[i, j] = matrix[i, j] * Math.Cos(angle) - matrix[j, i] * Math.Sin(angle);
+                double x = i - n / 2.0;
+                double y = j - n / 2.0;
+
+                // Calculate the new element after rotation
+                double newElement = Math.Cos(angle) * matrix[i, j] + Math.Sin(angle) * (x * matrix[i, j] - y);
+                
+                // Round the result to 2 decimal places
+                result[i, j] = Math.Round(newElement, 2);
             }
         }
 
