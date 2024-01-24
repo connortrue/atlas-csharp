@@ -14,7 +14,7 @@ public class Player
             maxHp = 100f;
         }
 
-        this.name = name ?? "Player";
+        this.name = string.IsNullOrEmpty(name) ? "Player" : name;
         this.maxHp = maxHp;
         this.hp = maxHp;
     }
