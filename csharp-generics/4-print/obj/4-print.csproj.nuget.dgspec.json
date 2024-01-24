@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Connor\\Downloads\\atlas-csharp\\csharp-generics\\4-print\\4-print.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Connor\\Downloads\\atlas-csharp\\csharp-generics\\4-print\\4-print.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Connor\\Downloads\\atlas-csharp\\csharp-generics\\4-print\\4-print.csproj",
+        "projectName": "4-print",
+        "projectPath": "C:\\Users\\Connor\\Downloads\\atlas-csharp\\csharp-generics\\4-print\\4-print.csproj",
+        "packagesPath": "C:\\Users\\Connor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Connor\\Downloads\\atlas-csharp\\csharp-generics\\4-print\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Connor\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
