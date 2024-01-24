@@ -6,7 +6,9 @@ public class Player
     private float maxHp;
     private float hp;
 
-    public Player(string name, float maxHp)
+
+
+    public Player(string name, float maxHp = 100f)
     {
         if (maxHp <= 0)
         {
