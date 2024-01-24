@@ -80,20 +80,7 @@ public class Player
         }
     }
 
-    public void TakeDamage(float damage)
-    {
-        float newHp = TakeDamage(damage);
-        ValidateHP(newHp);
-    }
-
-    public void HealDamage(float heal)
-    {
-        float newHp = HealDamage(heal);
-        ValidateHP(newHp);
-    }
-}
-
-public float ApplyModifier(float baseValue, Modifier modifier)
+    public float ApplyModifier(float baseValue, Modifier modifier)
 {
     switch (modifier)
     {
@@ -106,4 +93,5 @@ public float ApplyModifier(float baseValue, Modifier modifier)
         default:
             throw new ArgumentException("Invalid modifier", nameof(modifier));
     }
+}
 }
