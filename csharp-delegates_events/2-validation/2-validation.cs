@@ -35,6 +35,7 @@ public class Player
         {
             Console.WriteLine($"{name} takes 0 damage!");
         }
+        ValidateHP(hp);
         return hp;
     }
 
@@ -49,6 +50,7 @@ public class Player
         {
             Console.WriteLine($"{name} heals 0 HP!");
         }
+        ValidateHP(hp);
         return hp;
     }
 
