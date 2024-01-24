@@ -73,22 +73,6 @@ public class Player
         return hp;
     }
 
-    public void ValidateHP(float newHp)
-    {
-        if (newHp < 0)
-        {
-            hp = 0;
-        }
-        else if (newHp > maxHp)
-        {
-            hp = maxHp;
-        }
-        else
-        {
-            hp = newHp;
-        }
-    }
-
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
         switch (modifier)
