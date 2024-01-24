@@ -8,7 +8,7 @@ public class Player
 
 
 
-    public Player(string name, float maxHp = 100f)
+    public Player(string name = "Player", float maxHp = 100f)
     {
         if (maxHp <= 0)
         {
@@ -16,7 +16,7 @@ public class Player
             maxHp = 100f;
         }
 
-        this.name = string.IsNullOrEmpty(name) ? "Player" : name;
+        this.name = name;
         this.maxHp = maxHp;
         this.hp = maxHp;
     }
