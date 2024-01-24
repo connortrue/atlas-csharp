@@ -110,7 +110,7 @@ public class Player
 
     public event EventHandler<CurrentHPArgs> HPCheck;
 
-    private string status = "<name> is ready to go!";
+    private string status;
 
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
@@ -120,23 +120,23 @@ public class Player
 
         if (e.CurrentHp == maxHp)
         {
-            status = $"<name> is in perfect health!";
+            status = $"{name} is in perfect health!";
         }
         else if (e.CurrentHp > halfMaxHp && e.CurrentHp <= maxHp)
         {
-            status = $"<name> is doing well!";
+            status = $"{name} is doing well!";
         }
         else if (e.CurrentHp > quarterMaxHp && e.CurrentHp <= halfMaxHp)
         {
-            status = $"<name> isn't doing too great...";
+            status = $"{name} isn't doing too great...";
         }
         else if (e.CurrentHp > 0 && e.CurrentHp <= quarterMaxHp)
         {
-            status = $"<name> needs help!";
+            status = $"{name} needs help!";
         }
         else if (e.CurrentHp == 0)
         {
-            status = $"<name> is knocked out!";
+            status = $"{name} is knocked out!";
         }
 
         Console.WriteLine(status);
