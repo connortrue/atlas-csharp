@@ -9,6 +9,17 @@ public enum Modifier
 
 public delegate float CalculateModifier(float baseValue, Modifier modifier);
 
+public class CurrentHPArgs : EventArgs
+{
+    public float CurrentHp { get; }
+
+    public CurrentHPArgs(float newHp)
+    {
+        CurrentHp = newHp;
+    }
+}
+
+
 
 public class Player
 {
@@ -27,6 +38,7 @@ public class Player
         this.name = name ?? "Player";
         this.maxHp = maxHp;
         this.hp = maxHp;
+        HPCheck += CheckStatus;
     }
 
     public void PrintHealth()
@@ -78,6 +90,7 @@ public class Player
         {
             hp = newHp;
         }
+        HPCheck?.Invoke(this, new CurrentHPArgs(hp));
     }
 
     public float ApplyModifier(float baseValue, Modifier modifier)
@@ -93,5 +106,39 @@ public class Player
             default:
                 throw new ArgumentException("Invalid modifier", nameof(modifier));
         }
+    }
+
+    public event EventHandler<CurrentHPArgs> HPCheck;
+
+    private string status = "<name> is ready to go!";
+
+    private void CheckStatus(object sender, CurrentHPArgs e)
+    {
+        float maxHp = 9001f;
+        float halfMaxHp = maxHp / 2;
+        float quarterMaxHp = maxHp / 4;
+
+        if (e.CurrentHp == maxHp)
+        {
+            status = $"<name> is in perfect health!";
+        }
+        else if (e.CurrentHp > halfMaxHp && e.CurrentHp <= maxHp)
+        {
+            status = $"<name> is doing well!";
+        }
+        else if (e.CurrentHp > quarterMaxHp && e.CurrentHp <= halfMaxHp)
+        {
+            status = $"<name> isn't doing too great...";
+        }
+        else if (e.CurrentHp > 0 && e.CurrentHp <= quarterMaxHp)
+        {
+            status = $"<name> needs help!";
+        }
+        else if (e.CurrentHp == 0)
+        {
+            status = $"<name> is knocked out!";
+        }
+
+        Console.WriteLine(status);
     }
 }
