@@ -34,7 +34,7 @@ public class Player
         Console.WriteLine($"{name} has {hp} / {maxHp} health");
     }
 
-    public void TakeDamage(float damage)
+    public float TakeDamage(float damage)
     {
         if (damage >= 0)
         {
@@ -46,9 +46,10 @@ public class Player
             Console.WriteLine($"{name} takes 0 damage!");
         }
         ValidateHP(hp);
+        return hp;
     }
 
-    public void HealDamage(float heal)
+    public float HealDamage(float heal)
     {
         if (heal >= 0)
         {
@@ -60,6 +61,7 @@ public class Player
             Console.WriteLine($"{name} heals 0 HP!");
         }
         ValidateHP(hp);
+        return hp;
     }
 
     public void ValidateHP(float newHp)
