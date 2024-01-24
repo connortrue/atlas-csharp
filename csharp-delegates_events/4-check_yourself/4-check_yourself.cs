@@ -34,32 +34,32 @@ public class Player
         Console.WriteLine($"{name} has {hp} / {maxHp} health");
     }
 
-    public float TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
         if (damage >= 0)
         {
             Console.WriteLine($"{name} takes {damage} damage!");
-            return hp - damage;
+            hp -= damage;
         }
         else
         {
             Console.WriteLine($"{name} takes 0 damage!");
-            return hp;
         }
+        ValidateHP(hp);
     }
 
-    public float HealDamage(float heal)
+    public void HealDamage(float heal)
     {
         if (heal >= 0)
         {
             Console.WriteLine($"{name} heals {heal} HP!");
-            return hp + heal;
+            hp += heal;
         }
         else
         {
             Console.WriteLine($"{name} heals 0 HP!");
-            return hp;
         }
+        ValidateHP(hp);
     }
 
     public void ValidateHP(float newHp)
@@ -78,30 +78,18 @@ public class Player
         }
     }
 
-    public void TakeDamage(float damage)
+    public float ApplyModifier(float baseValue, Modifier modifier)
     {
-        float newHp = TakeDamage(damage);
-        ValidateHP(newHp);
-    }
-
-    public void HealDamage(float heal)
-    {
-        float newHp = HealDamage(heal);
-        ValidateHP(newHp);
-    }
-}
-
-public float ApplyModifier(float baseValue, Modifier modifier)
-{
-    switch (modifier)
-    {
-        case Modifier.Weak:
-            return baseValue * 0.5f;
-        case Modifier.Base:
-            return baseValue;
-        case Modifier.Strong:
-            return baseValue * 1.5f;
-        default:
-            throw new ArgumentException("Invalid modifier", nameof(modifier));
+        switch (modifier)
+        {
+            case Modifier.Weak:
+                return baseValue * 0.5f;
+            case Modifier.Base:
+                return baseValue;
+            case Modifier.Strong:
+                return baseValue * 1.5f;
+            default:
+                throw new ArgumentException("Invalid modifier", nameof(modifier));
+        }
     }
 }
