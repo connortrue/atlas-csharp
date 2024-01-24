@@ -11,13 +11,15 @@ public delegate float CalculateModifier(float baseValue, Modifier modifier);
 
 public class CurrentHPArgs : EventArgs
 {
-    public float currentHp { get; private set; }
+    public float CurrentHp { get; }
 
     public CurrentHPArgs(float newHp)
     {
-        this.currentHp = newHp;
+        CurrentHp = newHp;
     }
 }
+
+
 
 public class Player
 {
@@ -36,6 +38,7 @@ public class Player
         this.name = name ?? "Player";
         this.maxHp = maxHp;
         this.hp = maxHp;
+        HPCheck += CheckStatus;
     }
 
     public void PrintHealth()
@@ -73,6 +76,23 @@ public class Player
         return hp;
     }
 
+    public void ValidateHP(float newHp)
+    {
+        if (newHp < 0)
+        {
+            hp = 0;
+        }
+        else if (newHp > maxHp)
+        {
+            hp = maxHp;
+        }
+        else
+        {
+            hp = newHp;
+        }
+        HPCheck?.Invoke(this, new CurrentHPArgs(hp));
+    }
+
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
         switch (modifier)
@@ -90,41 +110,35 @@ public class Player
 
     public event EventHandler<CurrentHPArgs> HPCheck;
 
-    public void HPValueWarning(object sender, CurrentHPArgs e)
-    {
-        if (e.currentHp == 0)
-        {
-            Console.WriteLine("Health has reached zero!");
-        }
-        else
-        {
-            Console.WriteLine("Health is low!");
-        }
-    }
+    private string status;
 
-    public void OnCheckStatus(CurrentHPArgs e)
+    private void CheckStatus(object sender, CurrentHPArgs e)
     {
-        if (e.currentHp < maxHp / 4)
-        {
-            HPCheck += HPValueWarning;
-        }
-        HPCheck?.Invoke(this, e);
-    }
+        float maxHp = 9001f;
+        float halfMaxHp = maxHp / 2;
+        float quarterMaxHp = maxHp / 4;
 
-    public void ValidateHP(float newHp)
-    {
-        if (newHp < 0)
+        if (e.CurrentHp == maxHp)
         {
-            hp = 0;
+            status = $"{name} is in perfect health!";
         }
-        else if (newHp > maxHp)
+        else if (e.CurrentHp > halfMaxHp && e.CurrentHp <= maxHp)
         {
-            hp = maxHp;
+            status = $"{name} is doing well!";
         }
-        else
+        else if (e.CurrentHp > quarterMaxHp && e.CurrentHp <= halfMaxHp)
         {
-            hp = newHp;
+            status = $"{name} isn't doing too great...";
         }
-        OnCheckStatus(new CurrentHPArgs(hp));
+        else if (e.CurrentHp > 0 && e.CurrentHp <= quarterMaxHp)
+        {
+            status = $"{name} needs help!";
+        }
+        else if (e.CurrentHp == 0)
+        {
+            status = $"{name} is knocked out!";
+        }
+
+        Console.WriteLine(status);
     }
 }

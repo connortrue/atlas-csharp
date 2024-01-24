@@ -114,7 +114,7 @@ public class Player
 
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
-        float maxHp = 9001f;
+        float maxHp = 100f;
         float halfMaxHp = maxHp / 2;
         float quarterMaxHp = maxHp / 4;
 
