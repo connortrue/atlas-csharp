@@ -130,13 +130,13 @@ public class Player
     {
         status = $"{name} isn't doing too great...";
     }
-    else if (e.CurrentHp > 0 && e.CurrentHp < quarterMaxHp)
+    else if (e.CurrentHp > 0 && e.CurrentHp <= quarterMaxHp)
     {
         status = $"{name} needs help!";
     }
     else if (e.CurrentHp == 0)
     {
-        status = $"{name} is knocked out!";
+        status = $"{name} isn't doing too great...";
     }
 
         Console.WriteLine(status);
