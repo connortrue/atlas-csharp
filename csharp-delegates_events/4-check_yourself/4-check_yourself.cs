@@ -119,25 +119,25 @@ public class Player
         float quarterMaxHp = maxHp / 4;
 
         if (e.CurrentHp == maxHp)
-        {
-            status = $"{name} is in perfect health!";
-        }
-        else if (e.CurrentHp > halfMaxHp && e.CurrentHp <= maxHp)
-        {
-            status = $"{name} is doing well!";
-        }
-        else if (e.CurrentHp > quarterMaxHp && e.CurrentHp <= halfMaxHp)
-        {
-            status = $"{name} isn't doing too great...";
-        }
-        else if (e.CurrentHp > 0 && e.CurrentHp <= quarterMaxHp)
-        {
-            status = $"{name} needs help!";
-        }
-        else if (e.CurrentHp == 0)
-        {
-            status = $"{name} is knocked out!";
-        }
+    {
+        status = $"{name} is in perfect health!";
+    }
+    else if (e.CurrentHp > halfMaxHp && e.CurrentHp <= maxHp)
+    {
+        status = $"{name} is doing well!";
+    }
+    else if (e.CurrentHp > quarterMaxHp && e.CurrentHp <= halfMaxHp)
+    {
+        status = $"{name} isn't doing too great...";
+    }
+    else if (e.CurrentHp > 0 && e.CurrentHp <= quarterMaxHp)
+    {
+        status = $"{name} needs help!";
+    }
+    else if (e.CurrentHp == 0)
+    {
+        status = $"{name} is knocked out!";
+    }
 
         Console.WriteLine(status);
     }
