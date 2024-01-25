@@ -122,15 +122,15 @@ public class Player
     {
         status = $"{name} is in perfect health!";
     }
-    else if (e.CurrentHp => halfMaxHp && e.CurrentHp <= maxHp)
+    else if (e.CurrentHp >= halfMaxHp && e.CurrentHp <= maxHp)
     {
         status = $"{name} is doing well!";
     }
-    else if (e.CurrentHp => quarterMaxHp && e.CurrentHp <= halfMaxHp)
+    else if (e.CurrentHp >= quarterMaxHp && e.CurrentHp <= halfMaxHp)
     {
         status = $"{name} isn't doing too great...";
     }
-    else if (e.CurrentHp => 0 && e.CurrentHp <= quarterMaxHp)
+    else if (e.CurrentHp >= 0 && e.CurrentHp <= quarterMaxHp)
     {
         status = $"{name} needs help!";
     }
