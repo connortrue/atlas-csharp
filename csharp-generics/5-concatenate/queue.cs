@@ -1,7 +1,6 @@
 using System;
 using System.Text;
 
-
 public class Queue<T>
 {
     public class Node
@@ -92,8 +91,12 @@ public class Queue<T>
         Node current = head;
         while (current != null)
         {
-            Console.Write(current.value + " ");
+            Console.Write(current.value);
             current = current.next;
+            if (current != null)
+            {
+                Console.Write("\n");
+            }
         }
 
         Console.WriteLine();
