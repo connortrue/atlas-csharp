@@ -91,7 +91,7 @@ public class Queue<T>
 
         while (currentNode != null)
         {
-            Console.Write(currentNode.value + " ");
+            Console.Write(currentNode.value + "\n");
             currentNode = currentNode.next;
         }
 
