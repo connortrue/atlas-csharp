@@ -136,7 +136,7 @@ public class Player
     }
     else if (e.CurrentHp == 0)
     {
-        status = $"{name} isn't doing too great...";
+        status = $"{name} is knocked out!";
     }
 
         Console.WriteLine(status);
