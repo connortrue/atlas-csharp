@@ -76,22 +76,11 @@ public class Player
         return hp;
     }
 
-    public void ValidateHP(float newHp)
+    public void ValidateHP(CurrentHPArgs e)
     {
-        if (newHp < 0)
-        {
-            hp = 0;
-        }
-        else if (newHp > maxHp)
-        {
-            hp = maxHp;
-        }
-        else
-        {
-            hp = newHp;
-        }
-        HPCheck?.Invoke(this, new CurrentHPArgs(hp));
+        OnCheckStatus(e);
     }
+
 
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
@@ -114,31 +103,57 @@ public class Player
 
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
-        float maxHp = 9001f;
+        float maxHp = 100f;
         float halfMaxHp = maxHp / 2;
         float quarterMaxHp = maxHp / 4;
 
-        if (e.CurrentHp == maxHp)
-        {
-            status = $"{name} is in perfect health!";
-        }
-        else if (e.CurrentHp > halfMaxHp && e.CurrentHp <= maxHp)
-        {
-            status = $"{name} is doing well!";
-        }
-        else if (e.CurrentHp > quarterMaxHp && e.CurrentHp <= halfMaxHp)
-        {
-            status = $"{name} isn't doing too great...";
-        }
-        else if (e.CurrentHp > 0 && e.CurrentHp <= quarterMaxHp)
-        {
-            status = $"{name} needs help!";
-        }
-        else if (e.CurrentHp == 0)
-        {
-            status = $"{name} is knocked out!";
-        }
+    if (e.CurrentHp == maxHp)
+    {
+        status = $"{name} is in perfect health!";
+    }
+    else if (e.CurrentHp >= halfMaxHp && e.CurrentHp <= maxHp)
+    {
+        status = $"{name} is doing well!";
+    }
+    else if (e.CurrentHp >= quarterMaxHp && e.CurrentHp <= halfMaxHp)
+    {
+        status = $"{name} isn't doing too great...";
+    }
+    else if (e.CurrentHp > 0 && e.CurrentHp <= quarterMaxHp)
+    {
+        status = $"{name} needs help!";
+    }
+    else if (e.CurrentHp == 0)
+    {
+        status = $"{name} is knocked out!";
+    }
 
         Console.WriteLine(status);
     }
+
+    private void HPValueWarning(object sender, CurrentHPArgs e)
+{
+    if (e.currentHp == 0)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Health has reached zero!");
+        Console.ResetColor();
+    }
+    else
+    {
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("Health is low!");
+        Console.ResetColor();
+    }
+}
+
+public void OnCheckStatus(CurrentHPArgs e)
+{
+    if (e.currentHp < e.maxHp / 4)
+    {
+        HPCheck += HPValueWarning;
+    }
+    HPCheck?.Invoke(this, e);
+}
+
 }
