@@ -1,9 +1,9 @@
 public class Queue<T>
 {
-    private List<T> _list = new List<T>();
+    private List<T> _elements = new List<T>();
 
     public Type CheckType()
     {
-        return typeof(T);
+        return _elements[0]?.GetType();
     }
 }
