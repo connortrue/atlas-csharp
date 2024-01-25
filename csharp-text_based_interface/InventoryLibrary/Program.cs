@@ -1,6 +1,6 @@
+using InventoryLibrary;
 using System;
 using System.Linq;
-using InventoryLibrary;
 using System.Collections.Generic;
 
 
@@ -26,7 +26,6 @@ namespace InventoryManager
                     case "classnames":
                         PrintClassNames();
                         break;
-                    // Implement other cases here...
                     default:
                         Console.WriteLine("Invalid command.");
                         break;

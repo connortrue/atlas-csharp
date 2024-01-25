@@ -1,0 +1,16 @@
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\net5.0\InventoryLibrary.csproj.AssemblyReference.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\net5.0\InventoryLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\net5.0\InventoryLibrary.AssemblyInfoInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\net5.0\InventoryLibrary.AssemblyInfo.cs
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\net5.0\InventoryLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\bin\Debug\net5.0\InventoryLibrary.exe
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\bin\Debug\net5.0\InventoryLibrary.deps.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\bin\Debug\net5.0\InventoryLibrary.runtimeconfig.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\bin\Debug\net5.0\InventoryLibrary.runtimeconfig.dev.json
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\bin\Debug\net5.0\InventoryLibrary.dll
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\bin\Debug\net5.0\ref\InventoryLibrary.dll
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\bin\Debug\net5.0\InventoryLibrary.pdb
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\net5.0\InventoryLibrary.dll
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\net5.0\ref\InventoryLibrary.dll
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\net5.0\InventoryLibrary.pdb
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\net5.0\InventoryLibrary.genruntimeconfig.cache

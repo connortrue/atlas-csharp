@@ -1,3 +1,7 @@
+using System;
+using InventoryLibrary;
+using System.Collections.Generic;
+
 public class Item : BaseClass
 {
     public string name { get; set; }
@@ -7,6 +11,6 @@ public class Item : BaseClass
 
     public Item()
     {
-        price = Math.Round(price, 2); // Limit to 2 decimal points
+        price = (float)Math.Round(price, 2);
     }
 }

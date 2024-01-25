@@ -1,3 +1,6 @@
+using System;
+using InventoryLibrary;
+
 public class Inventory : BaseClass
 {
     public string user_id { get; set; }

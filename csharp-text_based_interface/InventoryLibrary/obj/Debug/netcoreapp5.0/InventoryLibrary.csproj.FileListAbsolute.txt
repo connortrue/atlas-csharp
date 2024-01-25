@@ -1,0 +1,5 @@
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp5.0\InventoryLibrary.csproj.AssemblyReference.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp5.0\InventoryLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp5.0\InventoryLibrary.AssemblyInfoInputs.cache
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp5.0\InventoryLibrary.AssemblyInfo.cs
+C:\Users\Connor\Downloads\atlas-csharp\csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp5.0\InventoryLibrary.csproj.CoreCompileInputs.cache
