@@ -44,6 +44,11 @@ public class Player
         CurrentHp = newHp;
     }
 
+    public void ApplyModifier(float modifier)
+    {
+        CalculateModifier(modifier);
+    }
+
     public void OnCheckStatus(CurrentHPArgs e)
     {
         if (e.currentHp < e.maxHp / 4)
