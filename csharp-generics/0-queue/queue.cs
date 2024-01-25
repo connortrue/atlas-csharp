@@ -2,8 +2,9 @@ using System;
 
 public class Queue<T>
 {
+    string name;
     public Type CheckType()
     {
-        return _elements[0]?.GetType();
+        return name?.GetType();
     }
 }
