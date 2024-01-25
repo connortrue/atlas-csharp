@@ -10,6 +10,15 @@ public class CurrentHPArgs
 
 public class Player
 {
+    public float CurrentHp { get; set; }
+    public float MaxHp { get; set; }
+
+    public Player(float initialHp, float maxHp)
+    {
+        CurrentHp = initialHp;
+        MaxHp = maxHp;
+    }
+
     public event HPCheckDelegate HPCheck;
 
     private void HPValueWarning(object sender, CurrentHPArgs e)
@@ -26,6 +35,13 @@ public class Player
             Console.WriteLine("Health is low!");
             Console.ResetColor();
         }
+    }
+
+    public void CalculateModifier(float modifier)
+    {
+        float newHp = CurrentHp + (CurrentHp * modifier / 100);
+        newHp = Math.Min(Math.Max(newHp, 0), MaxHp);
+        CurrentHp = newHp;
     }
 
     public void OnCheckStatus(CurrentHPArgs e)
