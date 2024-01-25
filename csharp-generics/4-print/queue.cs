@@ -89,11 +89,11 @@ public class Queue<T>
             return;
         }
 
-        while (currentNode != null)
+        do
         {
-            Console.Write(currentNode.value + "\n");
+            Console.Write(currentNode.value);
             currentNode = currentNode.next;
-        }
+        } while (currentNode != null && Console.Write("\n"));
 
         Console.WriteLine();
     }
