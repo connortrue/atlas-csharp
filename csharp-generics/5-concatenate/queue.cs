@@ -105,18 +105,19 @@ public class Queue<T>
             return null;
         }
 
-        if (!typeof(T).Equals(typeof(string)) && !typeof(T).Equals(typeof(char)))
+        if (!(typeof(T) == typeof(string)) && !(typeof(T) == typeof(char)))
         {
             Console.WriteLine("Concatenate() is for a queue of Strings or Chars only.");
             return null;
         }
 
+        Node currentNode = head;
         StringBuilder sb = new StringBuilder();
-        Node current = head;
-        while (current != null)
+
+        while (currentNode != null)
         {
-            sb.Append(current.value.ToString());
-            current = current.next;
+            sb.Append(currentNode.value);
+            currentNode = currentNode.next;
         }
 
         return sb.ToString();
