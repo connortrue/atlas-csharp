@@ -81,9 +81,9 @@ public class Queue<T>
 
     public void Print()
     {
-        Node currentNode = head;
+        Node current = head;
 
-        if (currentNode == null)
+        if (current == null)
         {
             Console.WriteLine("Queue is empty");
             return;
