@@ -118,7 +118,7 @@ public class Player
         float halfMaxHp = maxHp / 2;
         float quarterMaxHp = maxHp / 4;
 
-        if (e.CurrentHp == maxHp)
+    if (e.CurrentHp == maxHp)
     {
         status = $"{name} is in perfect health!";
     }
@@ -130,7 +130,7 @@ public class Player
     {
         status = $"{name} isn't doing too great...";
     }
-    else if (e.CurrentHp >= 0 && e.CurrentHp <= quarterMaxHp)
+    else if (e.CurrentHp > 0 && e.CurrentHp <= quarterMaxHp)
     {
         status = $"{name} needs help!";
     }
