@@ -81,16 +81,20 @@ public class Queue<T>
 
     public void Print()
     {
-        if (_elements.Count == 0)
+        Node currentNode = head;
+
+        if (currentNode == null)
         {
             Console.WriteLine("Queue is empty");
+            return;
         }
-        else
+
+        while (currentNode != null)
         {
-            foreach (var element in _elements)
-            {
-                Console.WriteLine(element);
-            }
+            Console.Write(currentNode.value + " ");
+            currentNode = currentNode.next;
         }
+
+        Console.WriteLine();
     }
 }
