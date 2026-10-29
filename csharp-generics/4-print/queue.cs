@@ -32,17 +32,17 @@ public class Queue<T>
     }
 
     /// <summary>
-    /// Gets or sets the head of the queue.
+    /// The head of the queue.
     /// </summary>
     private Node head;
 
     /// <summary>
-    /// Gets or sets the tail of the queue.
+    /// The tail of the queue.
     /// </summary>
     private Node tail;
 
     /// <summary>
-    /// Gets or sets the count of the elements in the queue.
+    /// The count of the elements in the queue.
     /// </summary>
     private int count;
 
