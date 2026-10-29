@@ -8,7 +8,7 @@ namespace Enemies
   public class Zombie
   {
       /// <summary>
-      /// Gets or sets the health of the zombie.
+      /// The health of the zombie.
       /// </summary>
       public int health;
 
